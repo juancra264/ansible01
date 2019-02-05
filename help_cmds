@@ -1,0 +1,1 @@
+ansible ftp -m shell -a 'cat /etc/shells' --ask-become-pass
