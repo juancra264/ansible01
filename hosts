@@ -1,7 +1,3 @@
-nx-naos-vsh-1
-nx-naos-vsh-2
-
-
-[nx-naos-vsh]
-nx-naos-vsh-1
-nx-naos-vsh-3
+[servers]
+  nasbackup
+  telnetproxy
