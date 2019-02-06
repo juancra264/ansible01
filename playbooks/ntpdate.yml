@@ -1,0 +1,10 @@
+---
+- name: playbook for NTP syncronizatio for all server 
+  hosts: servers
+  remote_user: jcramirez
+  become: yes
+  become_method: sudo
+  gather_facts: no
+  tasks:
+   - name: NTP syncronization with hora legal colombia
+     command: ntpdate -u horalegal.inm.gov.co

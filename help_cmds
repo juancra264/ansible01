@@ -1,1 +1,8 @@
-ansible ftp -m shell -a 'cat /etc/shells' --ask-become-pass
+# show all defined hosts
+ansible all --list-hosts 
+# execute Ping to all hosts
+ansible all -m ping 
+# execute uptime command to all hosts 
+ansible all -k -m command -a "uptime"
+# execute remote command to all hosts becomming root (sudo)
+ansible ftp -m command -a 'cat /etc/shells' -b --ask-become-pass
